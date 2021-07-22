@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>CSS selectors and specificity</h1>
+        <article>
+            Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied.
+            Specificity is based on the matching rules which are composed of different sorts of CSS selectors.
+        </article>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Selector</th>
+                    <th>Specificity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Type selectors</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Class selectors</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>ID selectors</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+            <h2>The !important exception</h2>
+            <article>
+                When an important rule is used on a style declaration, this declaration overrides any other declarations. Although technically !important has nothing to do with specificity, it interacts directly with it. Using !important, however, is bad practice and should be avoided because it makes debugging more difficult by breaking the natural cascading in your stylesheets.
+                When two conflicting declarations with the !important rule are applied to the same element, the declaration with a greater specificity will be applied.
+            </article>
+
+    </body>
+</html>
